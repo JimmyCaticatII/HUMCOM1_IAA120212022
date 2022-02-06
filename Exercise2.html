@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="A resume displayed on a web page.">
+        <meta name="description" content="A fresh grad resume displayed on a web page.">
         <meta name="keywords" content="HTML">
         <meta name="author" content="Jimmy Caticat II">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,21 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <style>
             body {
-                background-image: linear-gradient(rgb(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("images/Mane.jpg");
+                background-image: linear-gradient(rgb(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("images/Mane.jpg");
                 background-repeat: no-repeat;
                 background-attachment: scroll;
                 background-size: cover;
                 background-position: center;
+            }
+            hr {
+                display: block;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                margin-left: auto;
+                margin-right: auto;
+                border-style: inset;
+                border-width: 3px;
+                color: #e2e8e8;
             }
             h1 {
                 display: block;
@@ -25,8 +35,10 @@
                 margin-right: 0;
                 font-weight: bold;
                 font-family: 'Courier New', Courier, monospace;
+                font-stretch: extra-expanded;
+                font-size: 24pt;
                 text-align: center;
-                color: #e8e2e2;
+                color: goldenrod;
             }
             h3 {
                 display: block;
@@ -37,19 +49,42 @@
                 margin-right: 0;
                 font-weight: bold;
                 font-family: 'Courier New', Courier, monospace;
-                color: #e2e8e8;
+                font-stretch: extra-expanded;
+                font-size: 14pt;
+                color: burlywood;
             }
             div {
-                margin-left: 5px;
+                margin-left: 60px;
+                margin-right: 60px;
+                margin-bottom: 30px;
                 font-family: Tahoma;
                 font-size: 12pt;
-                color: #e2e8e8;
+                color: antiquewhite;
+            }
+            span {
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: extra-expanded;
+                color: #87adde;
+            }
+            ul.tip > li {
+                font-weight: bold;
+                font-style: italic;
+                font-stretch: extra-expanded;
+                color: #87adde;
+            }
+            ul {
+                list-style-type: none;
+                font-style: italic;
             }
             ul {
                 margin: 0;
+                line-height: 24pt;
             }
             ul.dashed {
                 list-style-type: none;
+                font-style: normal;
+                font-weight: normal;
             }
             ul.dashed > li {
                 text-indent: 0px;
@@ -66,113 +101,132 @@
         <br>
         <div>
         <hr>
-        <h3>obj</h3>
+        <br>
+        <h3>ABOUT ME</h3>
+        <br>
             <ul class="dashed">
-                <li>asd</li>
-                <li>asd</li>
-                <li>asd</li>
-                <li>asd</li>
+                <li>Recent univesity graduate with a passion for 
+                    programming, networking, and web design.</li>
+                <li>Seeking to acquire the appropriate knowledge 
+                    to provide quality applications and service <br> &nbsp;
+                    tailored to the wants and requirements of my
+                    future clients.</li>
+                <li>Driven by creativity and unorthodox methodologies
+                    and always looking for opportunities<br> &nbsp; to further improve
+                    and capitalize my skills in the field of computer science.</li>
             </ul>
-            <h3>educ</h3>
-            <ul style="list-style-type: none;">
-                <li>asd</li>
-                <li>asdasdasdsad</li>
+        <br>
+            <h3>EDUCATIONAL BACKGROUND</h3>
+        <br>
+            <ul>
+                <li>2021 - 2025 <span>| University of Baguio</span></li>
+                <li>Bachelor of Science in Computer Science</li>
                     <br>
                     <ul class="dashed">
-                        <li>asdasd</li>
-                        <li>asdasd</li>
+                        <li>Graduated on time and with honors.</li>
+                        <li>F Society: Vice Chairman</li>
                     </ul>
                     <br>
-                <li>asdasdsadd</li>
-                <li>asdasdsadgd</li>
+                <li>2016 - 2018 <span>| University of Baguio</span></li>
+                <li>Senior High School</li>
                     <br>
                     <ul class="dashed">
-                        <li>asdgf</li>
-                        <li>asdgf</li>
-                        <li>asdgf</li>
+                        <li>Graduated on time with average grades.</li>
+                        <li>Class Public Information Officer</li>
                     </ul>
                     <br>
-                <li>qweqwe</li>
-                <li>qweqwe</li>
+                <li>2012 - 2016 <span>| Benguet State University</span></li>
+                <li>Junior High School</li>
                     <br>
                     <ul class="dashed">
-                        <li>qweqwe</li>
-                        <li>qweqwe</li>
-                        <li>qweqwe</li>
+                        <li>Finished on time and as the 4th Honor roll</li>
+                        <li>Essayist, School Academic Journal</li>
+                        <li>Class Marshal</li>
                     </ul>
                     <br>
-            </ul>
-        <h3>work</h3>
-            <ul style="list-style-type: none;">
-                <li>wasd</li>
-                <li>wasd</li>
+                <li>2006 - 2012 <span>| Benguet State University</span></li>
+                <li>Elementary</li>
                     <br>
                     <ul class="dashed">
-                        <li>123213</li>
-                        <li>123213</li>
-                        <li>123213</li>
-                    </ul>
-                    <br>
-                <li>d1d1d</li>
-                <li>d1d1d</li>
-                    <br>
-                    <ul class="dashed">
-                        <li>d11d1</li>
-                        <li>d11d1</li>
-                        <li>d11d1</li>
-                        <li>d11d1</li>
+                        <li>Graduated, 4th Honor</li>
                     </ul>
                     <br>
             </ul>
-        <h3>spec</h3>
-            <ul style="list-style-type: none;">
-                <li>prog</li>
+        <h3>ACADEMIC AWARDS</h3>
+        <br>
+            <ul>
+                <li>Academic Decathlon International <span>| Team Member</span></li>
+                <li>Academic Decathlon Awardee</li>
                     <br>
                     <ul class="dashed">
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
+                        <li>Essay Category, Participation./li>
+                        <li>Super Quiz, 4th Runner-Up</li>
+                        <li>Test of Knowledge, Participation</li>
                     </ul>
                     <br>
-                <li>mult</li>
+                <li>School-Based Awards <span>| Class Monitor</span></li>
+                <li>Perfect Attendance Award</li>
                     <br>
                     <ul class="dashed">
-                        <li>2</li>
-                        <li>2</li>
-                    </ul>
-                    <br>
-                <li>des</li>
-                    <br>
-                    <ul class="dashed">
-                        <li>dawd</li>
-                        <li>dawd</li>
+                        <li>Never missed a class.</li>
+                        <li>Always punctual.</li>
+                        <li>Opens the school gate.</li>
                     </ul>
                     <br>
             </ul>
-        <h3>int</h3>
-            <ul style="list-style-type: none;">
-                <li>mu</li>
+        <h3>SPECIALIZATIONS and SKILLS</h3>
+        <br>
+            <ul class="tip">
+                <li>PROGRAMMING</li>
                     <br>
                     <ul class="dashed">
-                        <li>d11</li>
-                        <li>d11</li>
+                        <li>Algorithm Coding</li>
+                        <li>Data Structures</li>
+                        <li>HTML, CSS, and JavaScript proficiency</li>
                     </ul>
                     <br>
-                <li>spo</li>
+                <li>NETWORKING</li>
                     <br>
                     <ul class="dashed">
-                        <li>dkaskd</li>
-                        <li>dkaskd</li>
-                        <li>dkaskd</li>
+                        <li>CCNA</li>
+                        <li>Cisco DevNet Associate certified</li>
+                        <li>Automation</li>
+                        <li>Security and risk management.</li>
+                    </ul>
+                    <br>
+                <li>WEB DESIGN</li>
+                    <br>
+                    <ul class="dashed">
+                        <li>Creating wireframes, storyboards, sitemap, and user and proces flows</li>
+                        <li>UX design and android implementation</li>
+                    </ul>
+                    <br>
+            </ul>
+        <h3>MISCELLANEOUS</h3>
+        <br>
+            <ul class="tip">
+                <li>INTERESTS</li>
+                    <br>
+                    <ul class="dashed">
+                        <li>Building and benchmarking desktop computers</li>
+                        <li>New, innovative, and daring computer technologies</li>
+                    </ul>
+                    <br>
+                <li>OUTDOOR ACTIVITIES</li>
+                    <br>
+                    <ul class="dashed">
+                        <li>Hiking and mountaineering</li>
+                        <li>Snorkling and swimming</li>
+                        <li>Fishing: competitive as well as noncompetitive</li>
                     </ul>
                     <br>
             </ul>
         </div>
+        <br>
         <div style="text-align: center;">
-        <p>PA 185 Wangal, La Trinidad, Benguet<br>
+        <p><strong>PA 185 Wangal, La Trinidad, Benguet<br>
             Contact Number: +639000000000<br>
-            Email: 20161084@s.ubaguio.edu<br>
-        </p>
+            Email: 20161084@s.ubaguio.edu</strong></p>
         </div>
     </body>
 </html>
