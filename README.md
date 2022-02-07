@@ -7,4 +7,5 @@
     * [Exercise2](https://jimmycaticatii.github.io/HUMCOM1_IAA120212022/Exercise2.html "Jimmy Caticat II - Resume")
 3. Ungrouped HTMLs
     * [Index](https://jimmycaticatii.github.io/HUMCOM1_IAA120212022/Index.html "Setting Up My Website")
-    * [Meta]("https://jimmycaticatii.github.io/HUMCOM1_IAA120212022/Meta.html)
+4. Weird
+    * [Meta]("https://jimmycaticatii.github.io/HUMCOM1_IAA120212022/Meta.html "Meta Tag")
