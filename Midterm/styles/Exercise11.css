@@ -41,6 +41,12 @@ section {
     border-style: solid;
     margin: 10px;
 }
+section.logo {
+    float: left;
+    width: 25%; height: 250px;
+    background-image: url(/HUMCOM1_IAA120212022/Midterm/images/Spes\ Salutis.png);
+    background-size: cover;
+}
 section.navs {
     text-align: center;
     width: 70%;
@@ -59,6 +65,15 @@ article {
     height: 425px;
     padding: 50px;
     text-indent: 50px;
+}
+article.shawshankbg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(/HUMCOM1_IAA120212022/Midterm/images/Shawshank\ Redemption.png);
+}
+article.skyrimbg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(/HUMCOM1_IAA120212022/Midterm/images/Skyrim.png);
+}
+article.cthulhubg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(/HUMCOM1_IAA120212022/Midterm/images/Cthulhu.png);
 }
 article > h3, h4 {
     color: cornflowerblue;
