@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background: url(/HUMCOM1_IAA120212022/FinalExam/images/New-Zealand_Lake-Wanaka_WallpaperManiac.png) no-repeat center fixed;
+    background-size: cover;
+    font-family: Tahoma;
+}
+body::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.header {
+    font-size: larger;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #382212;
+    padding: 15px;
+}
+ul.menu {
+    list-style-type: none;
+    margin-left: 105px;
+    padding: 0;
+}
+li {
+    border-radius: 10px;
+    text-align: right;
+    padding: 15px;
+    margin-bottom: 7px;
+    background-color: rgba(147, 111, 76, 0.66);
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+li:hover {
+    background-color: rgba(147, 111, 76, 0.99);
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
