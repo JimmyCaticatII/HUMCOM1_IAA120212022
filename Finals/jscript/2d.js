@@ -1,0 +1,1 @@
+alert("Jimmy Caticat II\nBSCS\nFirst Year\nHUMCOM1-IAA1\nHuman-Computer Interaction 1");
