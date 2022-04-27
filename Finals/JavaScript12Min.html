@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript in 12 Minutes: Outputs</title>
+        <script>
+            var breaker = "<br>"
+
+            document.write("Hello!, People!<br>");
+
+            var myvar = 5;
+            document.write(myvar + breaker);
+
+            var sen = "This is ";
+            var tence = "a sentence.<br>"
+            var sentence = sen + tence;
+            document.write(sentence);
+
+            var num1 = 3;
+            var num2 = 4;
+            var total1 = num1 + num2;
+            var total2 = num1 - num2;
+            var total3 = num1 * num2;
+            var total4 = num1 / num2;
+            var total5 = num1 % num2;
+            document.write(total1 + breaker, total2 + breaker, total3 + breaker, total4 + breaker, total5 + breaker);
+
+            var alphabet = "QWERTY";
+            var length = alphabet.length - 1;
+            document.write(alphabet + breaker)
+
+            var result = alphabet.substring(2,4);
+            document.write(result + breaker);
+
+            var a = new Array(3);
+            a[0] = "cat";
+            a[1] = 1;
+            a[2] = true;
+            a[3] = false;
+            document.write(a + breaker)
+
+            var a2 = ["cat", "dog", 1, true]
+            document.write(a2);
+
+            function sayHello (who, what) {
+                document.write("Hello, " + who, what);
+            }
+
+            var check = 0;
+            if (check > 1) {
+                alert(check)
+            } else {
+                alert("Not True.")
+            }
+
+            document.write(breaker)
+            
+            for (i = 1; i < 4; i++) {
+                document.write("Iteration " + i + "<br>");
+            }
+
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write("<br>")
+            sayHello("Bob ", "my man!");
+            document.write("<br>")
+            sayHello("Jack ", "boss man" )
+        </script>
+    </body>
+</html>
