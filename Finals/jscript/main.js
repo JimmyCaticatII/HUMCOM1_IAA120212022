@@ -1,5 +1,5 @@
 var myName = "Jimmy";
-console.log("hello " + myName);
+console.log("Hello " + myName);
 
 const idNumber = "20161084";
 console.log("ID Number: " + idNumber);
@@ -20,3 +20,23 @@ console.log(species);
 transform();
 console.log(species);
 
+const nameIs = "Dyanna"
+const ageC = "18"
+const subj = "APPDEV1"
+
+console.log('I am ' + nameIs + ' and I am ' + ageC + ' learning ' + subj +'.');
+
+console.log(`I am ${nameIs} and I am ${ageC} learning ${subj}.`);
+
+const hello = `I am ${nameIs} and I am ${ageC} learning ${subj}.`;
+console.log(hello);
+
+var colors = ["red", "white", "green"];
+var x = colors.length;
+myArray[0] = Date.now;
+
+console.log(colors);
+console.log(x);
+console.log(myArray);
+var student = {id:"2012121", fn:"Linda", ln:"Santos"};
+console.log(student);
