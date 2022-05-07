@@ -12,8 +12,8 @@ let age = 18;
 var species = "Human";
 
 function transform() {
-    var species = "Werewolf";
-    console.log(species)
+    var speciesT = "Werewolf";
+    console.log(speciesT)
 }
 
 console.log(species);
