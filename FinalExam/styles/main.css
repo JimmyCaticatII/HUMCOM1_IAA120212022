@@ -1,33 +1,80 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 * {
     box-sizing: border-box;
 }
 html {
-    background: url(/HUMCOM1_IAA120212022/FinalExam/images/New-Zealand_Lake-Wanaka_WallpaperManiac.png) no-repeat center fixed;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body {
+    background-image: url(/HUMCOM1_IAA120212022/FinalExam/images/Cape_Reinga_Lighthouse_Pc7.png);
     background-size: cover;
-    font-family: Tahoma;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 body::after {
     content: "";
     clear: both;
     display: table;
 }
-.header {
-    font-size: larger;
-    margin-top: 30px;
-    margin-left: 30px;
-    color: #382212;
-    padding: 15px;
+header {
+    background-color: rgba(0, 0, 0);
+    font-size: 27px;
+    color: white;
+    padding: 10px;
 }
-ul.menu {
+ul {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
-    margin-left: 105px;
     padding: 0;
 }
 li {
-    border-radius: 10px;
-    text-align: right;
-    padding: 15px;
-    margin-bottom: 7px;
+    border: 1px solid black;
+    padding: 10px;
     background-color: rgba(147, 111, 76, 0.66);
     color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -35,43 +82,99 @@ li {
 li:hover {
     background-color: rgba(147, 111, 76, 0.99);
 }
+.logo {
+    margin: 25px;
+    border-radius: 100px;
+    border: 10px dotted white;
+    height: 150px;
+    width: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    color: rgba(222, 184, 135, 0.66);
+    letter-spacing: 10px;
+    margin-left: 60px;
+    font-size: 180px;
+    text-shadow: 1px 1px 4px rgba(222, 184, 135, 0.33);
+
+}
+.subhead {
+    color: rgba(245, 245, 220, 0.66);
+    letter-spacing: 10px;
+    margin-top: 225px;
+    margin-left: 70px;
+    font-size: 60px;
+    text-shadow: 1px 1px 3px white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+footer {
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: black;
+}
+
+[class*="col-"] {float: left;padding: 15px;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* For mobile phones: */
 [class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-.col-1 {
-    width: 8.33%;
-}
-.col-2 {
-    width: 16.66%;
-}
-.col-3 {
-    width: 25%;
-}
-.col-4 {
-    width: 33.33%;
-}
-.col-5 {
-    width: 41.66%;
-}
-.col-6 {
-    width: 50%;
-}
-.col-7 {
-    width: 58.33%;
-}
-.col-8 {
-    width: 66.66%;
-}
-.col-9 {
-    width: 75%;
-}
-.col-10 {
-    width: 83.33%;
-}
-.col-11 {
-    width: 91.66%;
-}
-.col-12 {
     width: 100%;
 }
+  
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+} 
