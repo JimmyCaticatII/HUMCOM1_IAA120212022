@@ -12,7 +12,7 @@ function showtime() {
     }
 
     if (h > 12) {
-        h -= 12;
+        h %= 12;
         session = "PM";
     }
 
@@ -32,9 +32,9 @@ showtime();
 function showtimeNZ() {
     var date = new Date();
     
-    var h = date.getHours() + 4;
-    var m = date.getMinutes() - 1;
-    var s = date.getSeconds() + 7;
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var s = date.getSeconds();
 
     var session = "AM";
 
@@ -43,7 +43,7 @@ function showtimeNZ() {
     }
 
     if (h > 12) {
-        h -= 12;
+        h %= 12;
         session = "PM";
     }
 
@@ -51,9 +51,9 @@ function showtimeNZ() {
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
 
-    var timeNZ = "NZ Time: " + h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplayNZ").innerHTML = timeNZ;
-    document.getElementById("MyClockDisplayNZ").textContent = timeNZ;
+    var time = "NH Time: " + h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplayNZ").innerHTML = time;
+    document.getElementById("MyClockDisplayNZ").textContent = time;
 
     setTimeout(showtimeNZ, 1000);
 }
