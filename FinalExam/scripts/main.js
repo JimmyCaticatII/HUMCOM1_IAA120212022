@@ -1,61 +1,29 @@
-function showtime() {
-    var date = new Date();
+function currentTime () {
     
-    var h = date.getHours();
-    var m = date.getMinutes();
-    var s = date.getSeconds();
+    let date = new Date();
 
-    var session = "AM";
+    let timePH = date.toLocaleTimeString();
 
-    if (h == 0) {
-        h = 12;
-    }
+    let time = "PH Time: " + timePH + " |";
 
-    if (h > 12) {
-        h %= 12;
-        session = "PM";
-    }
+    document.getElementById("clock").innerHTML = time;
+    setTimeout(function() {currentTime()}, 1000);
 
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-
-    var time = "PH Time: " + h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerHTML = time;
-    document.getElementById("MyClockDisplay").textContent = time;
-
-    setTimeout(showtime, 1000);
 }
 
-showtime();
+currentTime();
 
-function showtimeNZ() {
-    var date = new Date();
+function currentTimeNZ () {
     
-    var h = date.getHours();
-    var m = date.getMinutes();
-    var s = date.getSeconds();
+    let date = new Date();
 
-    var session = "AM";
+    let timeNZ = date.toLocaleTimeString("en-US", {timeZone: "Pacific/Auckland"});
 
-    if (h == 0) {
-        h = 12;
-    }
+    let time = "| NZ Time: " + timeNZ;
 
-    if (h > 12) {
-        h %= 12;
-        session = "PM";
-    }
+    document.getElementById("clockNZ").innerHTML = time;
+    setTimeout(function() {currentTimeNZ()}, 1000);
 
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-
-    var time = "NH Time: " + h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplayNZ").innerHTML = time;
-    document.getElementById("MyClockDisplayNZ").textContent = time;
-
-    setTimeout(showtimeNZ, 1000);
 }
 
-showtimeNZ();
+currentTimeNZ();
