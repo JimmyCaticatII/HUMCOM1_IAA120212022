@@ -63,7 +63,7 @@ body::after {
     display: table;
 }
 .cover {
-    background-color: white;
+    background-color: black;
 }
 .coverctrl1 {
     height: 1850px;
