@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <title>Location Map</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A page containing google map location of New Zealand.">
+        <meta name="keyword" content="HTML">
+        <meta name="author" content="Jimmy Caticat II">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/HUMCOM1_IAA120212022/FinalExam/styles/main.css">
+        <link rel="shortcut icon" href="/HUMCOM1_IAA120212022/FinalExam/images/Silver_Fern_Logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header id="top">
+            <div>
+                <a href="/HUMCOM1_IAA120212022/FinalExam/Index.html">
+                    <img class="logo center" src="/HUMCOM1_IAA120212022/FinalExam/images/Silver_Fern_Logo.png" alt="logo">
+                </a>
+                <ul>
+                    <li class="curve"><a href="/HUMCOM1_IAA120212022/FinalExam/Index.html">Home</a></li>
+                </ul>
+                <br>
+                <h1 class="centralized">New Zealand on the Map</h1>
+            </div>
+        </header>
+        <div class="cover coverctrl7">
+            <br><br><br>
+            <section>
+                <article>
+                    <h3 class="minihead">New Zealand Google Map</h3>
+                    <br>
+                    <div id="map" class="curve">
+                    </div>
+                    <p class="captionb">If google map API fails, click this coordinate: <a href="https://gps-coordinates.org/my-location.php?lat=-42.32477863038237&lng=172.5100837564424" target="_blank">(-42.32477863038237, 172.5100837564424)</a></p>
+                </article>
+            </section>
+            <br><br><br>
+        </div>
+        <div>
+            <footer>
+                <br>
+                <a class="subcentralized curve" href="#top">↑Top↑</a>
+                <p id="clock" class="clock aligncenter" onload="currentTime()"></p>
+                <p id="clockNZ" class="clockNZ aligncenter" onload="currentTimeNZ()"></p>
+                <br>
+            </footer>
+        </div>
+        <script src="/HUMCOM1_IAA120212022/FinalExam/scripts/main.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlG_a8F1uYsUZfbYO0OiBmBo4KisUe6N8&callback=initMap"></script>
+    </body>
 </html>
