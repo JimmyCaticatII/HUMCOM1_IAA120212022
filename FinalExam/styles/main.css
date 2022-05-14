@@ -97,27 +97,24 @@ body::after {
     width: 250px;
 }
 table {
+    background-color: #2c2f33;
     width: 75%;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     font-size: 30px;
     color: white;
 }
-td {
-    padding-right: 35px;
+table > caption {
+    margin-bottom: 20px;
 }
+
 td {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    width: 500px;
     border-radius: 4px;
     border: 1px solid white;
-    color: white;
-}
-td.adjust {
-    padding-right: 25px;
 }
 p.text {
     background-color: #2c2f33;
