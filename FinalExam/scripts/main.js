@@ -277,17 +277,3 @@ function showSlides6(n) {
     captionText6.innerHTML = dots6[slideIndex-1].alt;
 
 }
-
-function initMap() {
-    const locNZ = {lat: -42.32477863038237, lng: 172.549234577085};
-    const map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
-      center: locNZ,
-    });
-    const marker = new google.maps.Marker({
-      position: locNZ,
-      map: map,
-    });
-}
-
-window.initMap = initMap;
