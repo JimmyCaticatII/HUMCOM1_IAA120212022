@@ -63,7 +63,7 @@ body::after {
     display: table;
 }
 .cover {
-    background-color: black;
+    background-color: white;
 }
 .coverctrl1 {
     height: 1850px;
@@ -519,4 +519,5 @@ iframe {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
 }
