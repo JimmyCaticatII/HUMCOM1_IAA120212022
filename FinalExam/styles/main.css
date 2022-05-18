@@ -48,14 +48,12 @@ table {
 html {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.maincover {
+html.index {
+    overflow: hidden;
+}
+div.maincover {
     border-radius: 0px;
-    border-top: 60px solid black;
-    border-bottom: 60px solid black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
+    background-image: url("/HUMCOM1_IAA120212022/FinalExam/images/Cape_Reinga_Lighthouse_Pc7.png");
 }
 body::after {
     content: "";
@@ -64,6 +62,7 @@ body::after {
 }
 .cover {
     background-color: black;
+    background-repeat: repeat-y;
 }
 .coverctrl1 {
     height: 1850px;
@@ -96,7 +95,7 @@ body::after {
     height: 100%;
     width: 250px;
 }
-table {
+table.contact {
     background-color: #2c2f33;
     width: 75%;
     margin-top: 50px;
@@ -105,7 +104,7 @@ table {
     font-size: 30px;
     color: white;
 }
-table > caption {
+table.contact > caption {
     margin-bottom: 20px;
 }
 
@@ -116,12 +115,27 @@ td {
     border-radius: 4px;
     border: 1px solid white;
 }
+table.index {
+    position: absolute;
+    top: 1005px;
+    background-color: #2c2f33;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: white;
+    padding-top: 10px;
+}
+table.index > caption {
+    color: white;
+}
 p.text {
     background-color: #2c2f33;
     border-radius: 10px;
     padding: 15px;
 }
 article {
+    position: relative;
     text-indent: 50px;
     text-rendering: optimizeLegibility;
     letter-spacing: 0.03em;
@@ -137,7 +151,7 @@ header {
     background-color: rgba(0, 0, 0);
     font-size: 27px;
     color: white;
-    padding: 10px;
+    padding: 20px;
 }
 .fixed {
     position: fixed;
@@ -187,8 +201,8 @@ img.tats {
     margin: 25px;
     border-radius: 100px;
     border: 10px dotted white;
-    height: 150px;
-    width: auto;
+    height: 100%;
+    width: 150px;
 }
 .center {
     display: block;
@@ -255,11 +269,10 @@ a {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 footer {
-    color: white;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 60px;
     padding: 0 5px;
     position: fixed;
     display: flex;
@@ -487,6 +500,12 @@ iframe {
         height: 720px;
         background-color: grey;
     }
+    div.maincover {
+
+        background-position: center;
+        width: 1920px;
+        height: 1080px;
+    }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -496,7 +515,7 @@ iframe {
     .header {
         position: absolute;
         left: 68px;
-        top: 670px;
+        top: 555px;
         color: rgba(222, 184, 135, 0.66);
         letter-spacing: 7px;
         font-size: 120px;
@@ -505,12 +524,20 @@ iframe {
     .subhead {
         position: absolute;
         left: 75px;
-        top: 620px;
+        top: 505px;
         color: rgba(245, 245, 220, 0.66);
         letter-spacing: 7px;
         font-size: 40px;
         text-shadow: 1px 1px 3px white;
     }
+    div.maincover {
+        border-radius: 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 0 240px;
+        width: 100%;
+        height: 1080px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -543,4 +570,5 @@ iframe {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
 }
