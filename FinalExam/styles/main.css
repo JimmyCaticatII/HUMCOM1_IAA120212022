@@ -52,7 +52,10 @@ html.index {
     overflow: hidden;
 }
 div.maincover {
-    border-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
     background-image: url("/HUMCOM1_IAA120212022/FinalExam/images/Cape_Reinga_Lighthouse_Pc7.png");
 }
 body::after {
@@ -63,33 +66,6 @@ body::after {
 .cover {
     background-color: black;
     background-repeat: repeat-y;
-}
-.coverctrl1 {
-    height: 1850px;
-}
-.coverctrl2 {
-    height: 8710px;
-}
-.coverctrl2b {
-    height: 8710px;
-}
-.coverctrl3 {
-    height: 9900px;
-}
-.coverctrl4 {
-    height: 10800px;
-}
-.coverctrl5 {
-    height: 14700px;
-}
-.coverctrl6 {
-    height: 6110px;
-}
-.coverctrl7 {
-    height: 1050px;
-}
-.coverctrl8 {
-    height: 850px;
 }
 .imagectrl {
     height: 100%;
@@ -108,26 +84,25 @@ table.contact > caption {
     margin-bottom: 20px;
 }
 
-td {
+td.contact {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-radius: 4px;
     border: 1px solid white;
 }
-table.index {
-    position: absolute;
-    top: 1005px;
-    background-color: #2c2f33;
-    width: 1280px;
+table.home {
+    background-color: rgba(44, 47, 51, 0.50);
+    width: 25%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 15px;
+    font-size: 12px;
     color: white;
-    padding-top: 10px;
 }
-table.index > caption {
-    color: white;
+td.homed {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    border: 1px solid white;
 }
 p.text {
     background-color: #2c2f33;
@@ -161,11 +136,10 @@ ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 0;
 }
 li {
     border: 1px solid black;
-    padding: 10px;
+    padding: 7px;
     background-color: rgba(147, 111, 76, 0.50);
     color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -219,8 +193,8 @@ img.tats {
 }
 .header {
     position: absolute;
-    left: 100px;
-    top: 900px;
+    left: 590px;
+    top: 660px;
     color: rgba(222, 184, 135, 0.66);
     letter-spacing: 10px;
     font-size: 180px;
@@ -229,8 +203,8 @@ img.tats {
 }
 .subhead {
     position: absolute;
-    left: 110px;
-    top: 850px;
+    left: 600px;
+    top: 615px;
     color: rgba(245, 245, 220, 0.66);
     letter-spacing: 10px;
     font-size: 60px;
@@ -245,12 +219,15 @@ img.tats {
     text-indent: 0px;
 }
 .subcentralized {
-    display: flex;
-    justify-content: center;
+    margin-left: 10px;
+    margin-right: 17.5px;
     color: rgba(222, 184, 135, 0.66);
     letter-spacing: 3px;
     font-size: 20px;
     text-shadow: 1px 1px 4px rgba(222, 184, 135, 0.33);
+}
+.subcentralized:hover {
+    background-color: rgba(147, 111, 76, 0.75);
 }
 h3 {
     text-align: center;
@@ -261,7 +238,6 @@ a {
     text-decoration: none;
 }
 .curve {
-    border-radius: 10px;
     border: 1px solid black;
     padding: 4px;
     background-color: rgba(147, 111, 76, 0.50);
@@ -283,21 +259,11 @@ footer {
     background-color: black;
 }
 .clock {
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 31%;
-    transform: translateX(-50%) translateY(-50%);
     color: rgba(222, 184, 135, 0.66);
     font-size: 25px;
     letter-spacing: 7px;
 }
 .clockNZ {
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 69%;
-    transform: translateX(-50%) translateY(-50%);
     color: rgba(222, 184, 135, 0.66);
     font-size: 25px;
     letter-spacing: 7px;
@@ -406,25 +372,6 @@ iframe {
     height: 720px;
 }
 
-[class*="col-"] {float: left;padding: 15px;}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
-
 @media only screen and (min-width: 1367px) {
     .numbertext {
         left: 31%;
@@ -471,37 +418,12 @@ iframe {
         left: 25%;
         border-radius: 3px 0 0 3px;
     }
-    .coverctrl1 {
-        height: 1100px;
-    }
-    .coverctrl2 {
-        height: 7700px;
-    }
-    .coverctrl2b {
-        height: 7050px;
-    }
-    .coverctrl3 {
-        height: 8700px;
-    }
-    .coverctrl4 {
-        height: 9050px;
-    }
-    .coverctrl5 {
-        height: 13500px;
-    }
-    .coverctrl6 {
-        height: 7400px;
-    }
-    .coverctrl7 {
-        height: 1100px;
-    }
     #map {
         width: 100%;
         height: 720px;
         background-color: grey;
     }
     div.maincover {
-
         background-position: center;
         width: 1920px;
         height: 1080px;
@@ -538,37 +460,24 @@ iframe {
         background-position: 0 240px;
         width: 100%;
         height: 1080px;
-}
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
+    }
+    table.home {
+        position: absolute;
+        top: 1010px;
+        left: 25%;
+        background-color: rgba(44, 47, 51, 0.50);
+        width: 50%;
+        margin-top: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        color: white;
+        padding-top: 10px;
+    }
+    td.homed {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 9px;
+        border: 1px solid white;
+    }
 }
