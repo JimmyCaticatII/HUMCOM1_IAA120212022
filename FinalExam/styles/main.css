@@ -550,12 +550,40 @@ iframe {
     }
 
     .ctrlbtn {
+        width: 6%;
         position: absolute;
-        top: 25.1%;
         left: 47.25%;
         right: 47.25%;
         margin: 0 auto;
         text-align: center;
+    }
+    
+    .ctrlbtnabout {
+        top: 25.75%;
+    }
+    
+    .ctrlbtncult {
+        top: 25.33%;
+    }
+    
+    .ctrlbtnfest {
+        top: 25.33%;
+    }
+    
+    .ctrlbtnland {
+        top: 25.33%;
+    }
+    
+    .ctrlbtnwild {
+        top: 25.80%;
+    }
+    
+    .ctrlbtntamoko {
+        top: 25.80%;
+    }
+    
+    .ctrlbtngal {
+        top: 25.80%;
     }
 
     .condropdnc {
@@ -575,7 +603,7 @@ iframe {
         margin-top: 10px;
         margin-left: -50px;
         width: 100%;
-        height: 930px;
+        height: 750px;
     }
 }
 
@@ -636,11 +664,39 @@ iframe {
     }
 
     .ctrlbtn {
+        width: 11.5%;
         position: absolute;
-        top: 25.9%;
         left: 43.5%;
         right: 43.5%;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .ctrlbtnabout {
+        top: 26.50%;
+    }
+
+    .ctrlbtncult {
+        top: 26.1%;
+    }
+
+    .ctrlbtnfest {
+        top: 26.1%;
+    }
+
+    .ctrlbtnland {
+        top: 26.1%;
+    }
+
+    .ctrlbtnwild {
+        top: 26.60%;
+    }
+
+    .ctrlbtntamoko {
+        top: 26.60%;
+    }
+
+    .ctrlbtngal {
+        top: 26.60%;
     }
 }
