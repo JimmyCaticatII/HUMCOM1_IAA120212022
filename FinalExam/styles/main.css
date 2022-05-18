@@ -196,7 +196,6 @@ li.condropl a.condropa:hover, .condropdn:hover .condropbtn {
 
 .ctrlbtn {
     position: absolute;
-    top: 27%;
     left: 40%;
     right: 40%;
     margin: 0 auto;
@@ -552,7 +551,7 @@ iframe {
 
     .ctrlbtn {
         position: absolute;
-        top: 23%;
+        top: 25.1%;
         left: 47.25%;
         right: 47.25%;
         margin: 0 auto;
@@ -638,7 +637,7 @@ iframe {
 
     .ctrlbtn {
         position: absolute;
-        top: 26.5%;
+        top: 25.9%;
         left: 43.5%;
         right: 43.5%;
         margin: 0 auto;
