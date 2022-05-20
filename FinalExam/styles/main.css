@@ -548,7 +548,7 @@ h3.nuket {
         letter-spacing: 2px;
     }
 
-    table.contact>caption {
+    table.contact > caption.contact {
         margin-top: 2px;
         margin-bottom: 20px;
         color: rgba(186, 139, 99);
